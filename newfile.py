@@ -1,2 +1,5 @@
 print("master")
-print("lets check")
+print("lets not get confused not")
+
+function('alpha')
+print("focus")
