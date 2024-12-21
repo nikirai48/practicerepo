@@ -27,3 +27,14 @@ In your **cypress.json** or **cypress.config.js**:
     "password": "Qwerty@1234"
   }
 }
+
+In your **Command.js**:
+
+Cypress.Commands.add("Credentials", () => {
+  const username = Cypress.env("username");
+  const password = Cypress.env("password");
+
+  cy.visit("https://gor-pathology.web.app/");
+  // Add the steps to log in, using the username and password
+});
+
