@@ -29,8 +29,9 @@ Cypress.Commands.add("Credentials", () => {
 
   cy.visit("https://gor-pathology.web.app/");
 });
-### **Cypress Configuration:**
-  In your **cypress.json**:
+```
+
+In your **cypress.config**:
 
 ```json
 {
@@ -39,3 +40,15 @@ Cypress.Commands.add("Credentials", () => {
     "password": "Qwerty@1234"
   }
 }
+```
+
+In your **e2e.js**:
+
+```javascript
+ beforeEach(() => {
+  cy.Credentials();
+  cy.clearCookies();
+  cy.clearLocalStorage();
+});
+```
+
