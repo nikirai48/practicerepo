@@ -27,15 +27,3 @@ In your **cypress.json** or **cypress.config.js**:
     "password": "Qwerty@1234"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
