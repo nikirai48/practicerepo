@@ -30,10 +30,12 @@ In your **cypress.json** or **cypress.config.js**:
 
 ```json
 {
-Cypress.Commands.add("Credentials", () => {
+  "env": {
+   Cypress.Commands.add("Credentials", () => {
   const username = Cypress.env("username");
   const password = Cypress.env("password");
 
   cy.visit("https://gor-pathology.web.app/");
-  });
+});
+  }
 }
