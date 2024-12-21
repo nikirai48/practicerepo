@@ -28,14 +28,14 @@ In your **cypress.json** or **cypress.config.js**:
   }
 }
 
+### **Cypress Command:**
+
+In your **commands.js**:
+
 ```javascript
-{
-  "env": {
-   Cypress.Commands.add("Credentials", () => {
+Cypress.Commands.add("Credentials", () => {
   const username = Cypress.env("username");
   const password = Cypress.env("password");
 
   cy.visit("https://gor-pathology.web.app/");
 });
-  }
-}
