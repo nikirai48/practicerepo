@@ -51,4 +51,8 @@ In your **e2e.js**:
   cy.clearLocalStorage();
 });
 ```
+### Approach : 
 
+I used Cypress as a tetsing and first added Links and Credentials as a before each to make login easier. Then i started with Verifying the components seen on the dashboard page and Continued with Adding patient details. 
+I faced challenges while trying to locate few elements on the Add patients page as it was coming as Undefined in console which made it harder to click on the element. 
+After adding details the page is taking time to load which is sometimes throwing exception error 
