@@ -28,7 +28,7 @@ In your **cypress.json** or **cypress.config.js**:
   }
 }
 
-```json
+```javascript
 {
   "env": {
    Cypress.Commands.add("Credentials", () => {
