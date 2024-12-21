@@ -18,16 +18,6 @@ The login URL and user credentials will be added in the background using the **b
 
 #### **Cypress Configuration:**
 
-In your **cypress.json** or **cypress.config.js**:
-
-```json
-{
-  "env": {
-    "username": "test@kennect.io",
-    "password": "Qwerty@1234"
-  }
-}
-
 ### **Cypress Command:**
 
 In your **commands.js**:
