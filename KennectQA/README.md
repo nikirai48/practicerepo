@@ -30,8 +30,7 @@ Cypress.Commands.add("Credentials", () => {
   cy.visit("https://gor-pathology.web.app/");
 });
 ### **Cypress Configuration:**
-
-In your **cypress.json**:
+  In your **cypress.json**:
 
 ```json
 {
