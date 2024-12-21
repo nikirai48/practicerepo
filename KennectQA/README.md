@@ -20,21 +20,26 @@ The login URL and user credentials will be added in the background using the **b
 
 In your **cypress.json** or **cypress.config.js**:
 
-```json
-
-  "env": {
+"env": {
     "username": "test@kennect.io",
     "password": "Qwerty@1234"
   }
 
-
-In your **Command.js**:
-{
 Cypress.Commands.add("Credentials", () => {
   const username = Cypress.env("username");
   const password = Cypress.env("password");
 
-  cy.visit("https://gor-pathology.web.app/");
-  // Add the steps to log in, using the username and password
+  cy.visit("https://prgloo-dev-admin-01.azurewebsites.net/login/");
+  cy.get("#username").type(username);
+  cy.get("#password").type(password);
+  cy.get("#btn-submit").click();
 });
-}
+
+e2e.js
+beforeEach(() => {
+  cy.Credentials();
+  cy.clearCookies();
+  cy.clearLocalStorage();
+});
+
+
